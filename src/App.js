@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './components/VsjItem.css'
+import './components/VsjCounter.css'
+import VsjItem from './components/VsjItem';
+import VsjCounter from './components/VsjCounter'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <VsjItem name="Aman Smarty" age={16} address="SmartyNagar, Smartpura , UP"></VsjItem>
+      <VsjItem name="Shubham Smarty" age={14} address="Peelikothi, Smartpura , UP"></VsjItem>
+      <VsjCounter></VsjCounter>
+
+      
     </div>
   );
 }
