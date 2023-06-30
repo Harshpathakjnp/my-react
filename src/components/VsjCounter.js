@@ -4,8 +4,8 @@ function VsjCounter(props){
     const [a,b,setAdd] = useState(0,0);
     return <p>
         <h2>Count = {count}</h2>
-        <button onClick={() => setCount(count + 1)}>Counter</button>
-        <button onClick={function() { setCount(count + 1)}}>Counter</button>
+        <button onClick={() => setCount(count + 1)}>Adder</button>
+        <button onClick={() => setCount(count - 1)}>Subtractor</button>
     </p>
 }
 export default VsjCounter;
