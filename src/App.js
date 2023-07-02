@@ -1,18 +1,27 @@
+import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SubmitHandler from './components/SubmitHandler';
-import MarksCalculator from './components/MarksCalculator';
-import VsjExpenseCalculator from './components/VsjExpenseCalculator';
-import VsjB from './components/VsjB';
-function App() {
+import VsjA from './components/VsjA';
+
+
+//
+
+function App(props) {
+  const[mydata,setMyData]=useState(0);
+  const saveData=(n1)=>{
+    
+    const data={...n1};
+    console.log("App");
+    
+    setMyData(n1);
+    console.log(mydata);
+  };
   return (
     <div className="App">
-     Hii This is Developers Community !!!!!!!!!!
-     {/* <SubmitHandler></SubmitHandler> */}
+      <h2>from VsjA {mydata}</h2>
+      <VsjA onSaveData={saveData}/>
      
      
-
-      
     </div>
   );
 }
