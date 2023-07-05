@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import HelloEffect from './components/HelloEffect';
+import JsonData from './components/JsonData';
 
 function App() {
   return (
     <div className="App">
       <h1>Varanasi Software Junction</h1>
-      <HelloEffect/>      
+      <JsonData/>      
     </div>
   );
 }
