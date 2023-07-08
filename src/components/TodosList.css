@@ -1,0 +1,192 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  text-align: center;
+}
+
+.list-items {
+  margin-top: 20px;
+}
+
+.list-items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-items li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.todos-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todos-input input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.todos-input button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todos-input button:hover {
+  background-color: #0056b3;
+}
+
+.todos-input button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.3);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-box-todo {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-btn:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.3);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  text-align: center;
+}
+
+.list-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-items li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 6px 10px;
+  text-align: left;
+}

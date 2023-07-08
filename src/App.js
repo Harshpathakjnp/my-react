@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Cr from './components/Cr';
-import Films from './components/Films';
-import SimpleApi from './components/SimpleApi';
+import TodosList from './components/TodosList';
 function App() {
   return (
     <div className="App">
-      <Films></Films>
+      <TodosList />
     </div>
   );
 }
