@@ -1,12 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-import JsonData from './components/JsonData';
+import Cr from './components/Cr';
+import Films from './components/Films';
+import SimpleApi from './components/SimpleApi';
+
 
 function App() {
+  let arr = ['CR','Shubham','Ankit','Mohit']
   return (
+   
+    
     <div className="App">
-      <h1>Varanasi Software Junction</h1>
-      <JsonData/>      
+      
+      
+<Films></Films>
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
