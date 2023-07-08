@@ -1,5 +1,6 @@
 import axios, { Axios } from 'axios';
 import React, { useEffect, useState } from 'react'
+import './Films.css';
 
 function FilmsComponent(props) {
 
@@ -10,7 +11,7 @@ function FilmsComponent(props) {
     const [baseURL, setBaseURL] = useState(props.url)
 
     console.log(props.url);
-    const ButtonClickHandler = () => {
+    const buttonClickHandler = () => {
         setNum(!num)
         axios.get(baseURL).then((response) => {
             console.log(response.data);
@@ -23,7 +24,7 @@ function FilmsComponent(props) {
 
     return (
         <div>
-            <button onClick={ButtonClickHandler}>Click Here</button>
+            <button className='button' onClick={buttonClickHandler}>Click Here</button>
             <p > {(title) ? title : ""} </p>
             <p> {(films) ? films : ""}</p>
 
