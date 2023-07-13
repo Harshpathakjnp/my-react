@@ -2,8 +2,6 @@ import React from 'react';
 import './TodosList.css';
 
 function TodosItem(props) {
-  let list = props.item;
-
   return (
     <tr className="list-items">
       <td>{props.item}</td>

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './TodosList.css';
-import TodosItem from './TodosItem';
-
-
 function TodosInput(props) {
   const [inputText, setInputText] = useState("");
 
