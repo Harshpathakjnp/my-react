@@ -1,11 +1,10 @@
 import './App.css';
-import ImageAccess from './components/ImageAccess';
+import HarshTodos from './components/HarshTodos';
+
 function App() {
   return (
     <div className="App">
-      <ImageAccess/>
-      
-
+      <HarshTodos />
     </div>
   );
 }

@@ -27,11 +27,11 @@ function ImageAccess() {
             <center>
                 <table>
                     {album.map((current, i) => {
-                        return <tr  key={i}>
+                        return <tr key={i}>
                             <td rowSpan={2}><img src={current.url} alt={current.name}></img>
-                            <p>{current.albumname}</p>
-                            <p>{current.name}</p>
-                            <br></br><br></br>
+                                <p>{current.albumname}</p>
+                                <p>{current.name}</p>
+                                <br></br><br></br>
                             </td>
                         </tr>
                     })}
@@ -41,35 +41,34 @@ function ImageAccess() {
 
 
             <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {album.map((current, i) => {
+                        return <tr key={i}>
+                            <th scope="row">{current.sno}</th>
+                            <td>{current.albumname}</td>
+                            <td>{current.name}</td>
+                            <td><img src={current.url} alt={current.name} width={100} height={100}></img></td>
+                        </tr>
+                    })}
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="row row-cols-2">
+                    {album.map((current, i) => {
+                        return <div class="col" key={i}>
+                            <img src={current.url} alt={current.name} width={200} height={200}></img>
+                        </div>
+                    })}
+                </div>
+            </div>
         </div>
     )
 }
