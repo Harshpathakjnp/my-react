@@ -1,10 +1,8 @@
-import './App.css';
-import HarshTodos from './components/HarshTodos';
 
 function App() {
   return (
     <div className="App">
-      <HarshTodos />
+        <h1>Welcome to App JS</h1>
     </div>
   );
 }
